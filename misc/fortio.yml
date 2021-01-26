@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      environment : canary
+      app : fortio
   replicas: 1
   template:
     metadata:
