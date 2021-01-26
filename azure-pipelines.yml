@@ -28,7 +28,7 @@ stages:
     - task: Docker@2
       displayName: Build and push image
       inputs:
-        containerRegistry: '$(dockerRegistryServiceConnect)'
+        containerRegistry: '$(dockerRegistryServiceConnection)'
         repository: '$(imageRepository)'
         command: 'buildAndPush'
         Dockerfile: 'app/Dockerfile'
